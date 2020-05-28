@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Gerenciamento</title>
+
+    <!-- Common plugins -->
+    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="plugins/simple-line-icons/simple-line-icons.css" rel="stylesheet">
+    <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="plugins/pace/pace.css" rel="stylesheet">
+    <link href="plugins/jasny-bootstrap/css/jasny-bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/nano-scroll/nanoscroller.css">
+    <link rel="stylesheet" href="plugins/metisMenu/metisMenu.min.css">
+    <link href="plugins/iCheck/blue.css" rel="stylesheet">
+    <!--template css-->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+
+    <!--top bar start-->
+    <div class="top-bar light-top-bar">
+        <!--by default top bar is dark, add .light-top-bar class to make it light-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6">
+                    <a href="index.html" class="admin-logo">
+                        <h1><img src="images/logo-dark.png" alt=""></h1>
+                    </a>
+                    <div class="left-nav-toggle visible-xs visible-sm">
+                        <a href="">
+                            <i class="glyphicon glyphicon-menu-hamburger"></i>
+                        </a>
+                    </div>
+                    <!--end nav toggle icon-->
+                    <!--start search form-->
+                    <div class="search-form hidden-xs">
+                        <form>
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <button type="button" class="btn-search"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <!--end search form-->
+                </div>
+                <div class="col-xs-6">
+                    <ul class="list-inline top-right-nav">
+                        <li class="dropdown hidden-xs icon-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="glyphicon glyphicon-envelope"></i>
+                                <span class="badge badge-warning">4</span>
+                            </a>
+                            <ul class="dropdown-menu top-dropdown lg-dropdown notification-dropdown">
+                                <li>
+                                    <div class="dropdown-header"><a href="#" class="pull-right text-muted"><small>View
+                                                All</small></a> Messages </div>
+                                    <div class="scrollDiv">
+
+                                        <div class="notification-list">
+                                            <a href="javascript: void(0);" class="clearfix">
+                                                <span class="notification-icon">
+                                                    <img src="images/avtar-2.jpg" alt="" class="img-circle" width="50">
+                                                </span>
+                                                <span class="notification-title">John Doe <label
+                                                        class="label label-primary pull-right">Office</label></span>
+                                                <span class="notification-description">Praesent dictum nisl non est
+                                                    sagittis luctus.</span>
+                                                <span class="notification-time">40 minutes ago</span>
+                                            </a>
+                                            <a href="javascript: void(0);" class="clearfix">
+                                                <span class="notification-icon">
+                                                    <img src="images/avtar-3.jpg" alt="" class="img-circle" width="50">
+                                                </span>
+                                                <span class="notification-title">Emily Doe <label
+                                                        class="label label-info pull-right">Marketing</label></span>
+                                                <span class="notification-description">Praesent dictum nisl non est
+                                                    sagittis luctus.</span>
+                                                <span class="notification-time">40 minutes ago</span>
+                                            </a>
+                                            <a href="javascript: void(0);" class="clearfix">
+                                                <span class="notification-icon">
+                                                    <img src="images/avtar-4.jpg" alt="" class="img-circle" width="50">
+                                                </span>
+                                                <span class="notification-title">Michael Clark <label
+                                                        class="label label-warning pull-right">Support</label> </span>
+                                                <span class="notification-description">Praesent dictum nisl non est
+                                                    sagittis luctus.</span>
+                                                <span class="notification-time">40 minutes ago</span>
+                                            </a>
+                                            <a href="javascript: void(0);" class="clearfix">
+                                                <span class="notification-icon">
+                                                    <img src="images/avtar-5.jpg" alt="" class="img-circle" width="50">
+                                                </span>
+                                                <span class="notification-title">Ronaldo <label
+                                                        class="label label-success pull-right">Metting</label> </span>
+                                                <span class="notification-description">Praesent dictum nisl non est
+                                                    sagittis luctus.</span>
+                                                <span class="notification-time">40 minutes ago</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown hidden-xs icon-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="glyphicon glyphicon-bell"></i>
+                                <span class="badge badge-danger">6</span>
+                            </a>
+                            <ul class="dropdown-menu top-dropdown lg-dropdown notification-dropdown">
+                                <li>
+                                    <div class="dropdown-header"><a href="#" class="pull-right text-muted"><small>View
+                                                All</small></a> Notifications </div>
+                                    <div class="scrollDiv">
+                                        <div class="notification-list">
+                                            <a href="javascript: void(0);" class="clearfix">
+                                                <span class="notification-icon"><i
+                                                        class="icon-cloud-upload text-primary"></i></span>
+                                                <span class="notification-title">Upload Complete</span>
+                                                <span class="notification-description">Praesent dictum nisl non est
+                                                    sagittis luctus.</span>
+                                                <span class="notification-time">40 minutes ago</span>
+                                            </a>
+                                            <a href="javascript: void(0);" class="clearfix">
+                                                <span class="notification-icon"><i
+                                                        class="icon-info text-warning"></i></span>
+                                                <span class="notification-title">Storage Space low</span>
+                                                <span class="notification-description">Praesent dictum nisl non est
+                                                    sagittis luctus.</span>
+                                                <span class="notification-time">40 minutes ago</span>
+                                            </a>
+                                            <a href="javascript: void(0);" class="clearfix">
+                                                <span class="notification-icon"><i
+                                                        class="icon-check text-success"></i></span>
+                                                <span class="notification-title">Project Task Complete </span>
+                                                <span class="notification-description">Praesent dictum nisl non est
+                                                    sagittis luctus.</span>
+                                                <span class="notification-time">40 minutes ago</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript: void(0);" class="right-sidebar-toggle"><i
+                                    class="glyphicon glyphicon-align-right"></i></a>
+                        </li>
+                        <li class="dropdown avtar-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="images/avtar-1.jpg" class="img-circle" width="30" alt="">
+
+                            </a>
+                            <ul class="dropdown-menu top-dropdown">
+                                <li><a href="javascript: void(0);"><i class="icon-bell"></i> Activities</a></li>
+                                <li><a href="javascript: void(0);"><i class="icon-user"></i> Profile</a></li>
+                                <li><a href="javascript: void(0);"><i class="icon-settings"></i> Settings</a></li>
+                                <li class="divider"></li>
+                                <li><a href="javascript: void(0);"><i class="icon-logout"></i> Logout</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- top bar end-->
+
+
+    <!--left navigation start-->
+    <aside class="float-navigation light-navigation">
+        <div class="nano">
+            <div class="nano-content">
+                <ul class="metisMenu nav" id="menu">
+                    <li class="nav-heading"><span></span></li>
+                    <!-- <li><a href="index.html"><i class="fa fa-diamond"></i> Inicio </a></li> -->
+                    <li><a href="dadosdiarios.html"><i class="fa fa-calendar"></i> Dados Diários </a></li>
+                    <li><a href="fichapaciente.html"><i class="fa fa-user"></i> Ficha paciente </a></li>
+                    <li><a href="gerenciamento.html"><i class="fa fa-server"></i> Gerenciamento </a></li>
+                    <li><a href="page-login.html"><i class="fa fa-sign-in"></i> Sair </a></li>
+                </ul>
+            </div>
+            <!--nano content-->
+        </div>
+        <!--nano scroll end-->
+    </aside>
+    <!--left navigation end-->
+
+    <!--main content start-->
+    <section class="main-content">
+
+
+
+        <!--page header start-->
+        <div class="page-header">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>Página de gerenciamento</h4>
+                </div>
+                <div class="col-sm-6 text-right">
+                    <ol class="breadcrumb">
+                        <li><a href="javascript: void(0);"><i class="fa fa-home"></i></a></li>
+                        <li>pages</li>
+                        <li>Forms</li>
+                        <li>Basic</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!--page header end-->
+
+
+        <!--start page content-->
+
+        <h3> Páginas de Cadastro</h3> <br> <br> 
+
+
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Para criar um paciente/idoso</h5>
+                        <p class="card-text">Clique no botão abaixo para criar um paciente no seu lar</p>
+                        <a href="cadastropaciente.html" class="btn btn-primary">Página cadastro</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Para criar um funcionario</h5>
+                        <p class="card-text">Clique no botão abaixo para criar um funcionario no seu lar</p>
+                        <a href="cadastrofuncionario.html" class="btn btn-primary">Pagina Cadastro</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <!--end page content-->
+
+
+        <!--Start footer-->
+        <footer class="footer">
+            <span>Copyright &copy; 2016. Float</span>
+        </footer>
+        <!--end footer-->
+
+    </section>
+    <!--end main content-->
+
+
+
+
+    <!--Common plugins-->
+    <script src="plugins/jquery/dist/jquery.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/pace/pace.min.js"></script>
+    <script src="plugins/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
+    <script src="plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="plugins/nano-scroll/jquery.nanoscroller.min.js"></script>
+    <script src="plugins/metisMenu/metisMenu.min.js"></script>
+    <script src="js/float-custom.js"></script>
+    <!-- iCheck for radio and checkboxes -->
+    <script src="plugins/iCheck/icheck.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-blue',
+                radioClass: 'iradio_square-blue'
+            });
+        });
+    </script>
+
+</body>
+
+</html>
